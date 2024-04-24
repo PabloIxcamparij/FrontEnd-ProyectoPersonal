@@ -1,20 +1,45 @@
 import { useState } from 'react'
+import './App.css'
+import RecetaHeader from './RecetaHeader'
+import RecetaMain from './RecetaMain'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+      <header>
 
-      <h1>Vite + React</h1>
+        <h1> De mi cocina a la tuya</h1>
 
-      <div className="card">
+        <div className='contenedorRecetasHeader'>
+          <RecetaHeader />
+          <RecetaHeader />
+          <RecetaHeader />
+          <RecetaHeader />
+          <RecetaHeader />
+          <RecetaHeader />
+          <RecetaHeader />
+          <RecetaHeader />
+          <RecetaHeader />
+          <RecetaHeader />
+          <RecetaHeader />
+          <RecetaHeader />
+          <RecetaHeader />
 
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        </div>
+      </header>
 
-      </div>
+      <main>
+
+        <div className='contenedorRecetasMain'>
+          <RecetaMain />
+          <RecetaMain />
+          <RecetaMain />
+          <RecetaMain />
+
+
+        </div>
+      </main>
 
     </>
   )

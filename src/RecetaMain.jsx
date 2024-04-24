@@ -1,9 +1,10 @@
-export default function RecetaMain() {
+export default function RecetaMain({ src, alt, nombre }) {
+    const textoRecortado = nombre.length > 15? nombre.slice(0, 15) + '..' : nombre;
 
     return (
         <div className="ImagenMain">
-            <img className="img-main" src="./public/img/PolloHervido.jpg" alt="imagen logo" />
-            <h2>Pollo Hervido</h2>
+            <img className="img-main"  src={src} alt={alt} />
+            <h3>{textoRecortado}</h3>
         </div>
     )
 

@@ -1,0 +1,128 @@
+
+body{
+    background-color:rgb(244, 241, 241);
+    min-height: 100vh; /* Hace que el cuerpo ocupe al menos el alto completo de la ventana */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */  
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #e99401;
+
+}
+footer{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 5vw;
+    background-color:rgb(224, 224, 224);
+}
+
+/* Header */
+
+.contenedorMenu{
+    height: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedorBusqueda{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.inputBusqueda{
+    width: 30vw;
+    height: 3vw;
+    border-radius: 30vw;
+    border: none;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    outline: none;
+}
+
+.buttonBusqueda{
+    border: none;
+    background-color: #e99401;
+}
+
+.ImagenBusqueda{
+    width: 3vw;
+    height: 3vw;
+    /* Cambia el cursor al pasar sobre la imagen */
+    cursor: pointer;
+}
+
+.logo{
+    width: 30vw;
+    height: 30vw;
+    margin-bottom: 8px;
+
+}
+
+.contenedorTiposRecetasHeader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* Scroll*/
+    overflow-x: auto;
+    background-color:rgb(224, 224, 224);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ImagenTipoRecetasHeader{
+    padding: 1.5vw;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-header{
+    width: 13vw;
+    height: 13vw;
+    border-radius: 100vw;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Main */
+
+.contenedorRecetasMain{
+    margin-top: 10px;
+    gap: 4vw;
+    padding: 1vw;
+    display: grid;
+    /* Distribuye automáticamente los elementos en columnas */
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+     /* Alinea los elementos al inicio del contenedor */
+    justify-content: flex-start;
+}
+
+.ImagenMain{
+    display: flex;
+    margin: 0px auto;
+    align-items: center;
+    flex-direction: column;
+    border-top-left-radius: 10%; 
+    border-top-right-radius: 10%;
+  
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.img-main{
+    width: 28vw;
+    height: 25vw;
+    border-top-left-radius: 10%; 
+    border-top-right-radius: 10%;
+}
+
+@media (max-width: 400px) {
+    .contenedorRecetasMain{
+        gap: 5vw;
+    }
+}
+

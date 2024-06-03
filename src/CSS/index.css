@@ -1,3 +1,15 @@
+
+body{
+    background-color:rgb(244, 241, 241);
+    min-height: 100vh; /* Hace que el cuerpo ocupe al menos el alto completo de la ventana */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */  
+}
+
+header{
+    background-color: #e99401;
+}
+
+
 h1{
     font-size: 5vw;
 }

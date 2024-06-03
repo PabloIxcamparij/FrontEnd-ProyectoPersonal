@@ -1,0 +1,42 @@
+.contenedorMenu{
+    height: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedorBusqueda{
+    gap: 2vw;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.inputBusqueda{
+    width: 30vw;
+    height: 3vw;
+    border-radius: 30vw;
+    border: none;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    outline: none;
+}
+
+.buttonBusqueda{
+    border: none;
+    background-color: #e99401;
+}
+
+.ImagenBusqueda{
+    width: 3vw;
+    height: 3vw;
+    /* Cambia el cursor al pasar sobre la imagen */
+    cursor: pointer;
+}
+
+.logo{
+    width: 30vw;
+    height: 30vw;
+    margin-bottom: 8px;
+
+}

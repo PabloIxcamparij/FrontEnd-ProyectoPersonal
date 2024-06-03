@@ -7,7 +7,7 @@ function Header() {
 
             <img className="logo" src="/img/Logo.png" />
 
-            <form className='contenedorBusqueda'>
+            <form className='contenedorBusqueda' autoComplete="off">
                 <input type='text' id='inputBusqueda' className='inputBusqueda' required></input>
                 <button type="submit" id='buttonBusqueda' className='buttonBusqueda'>
                     <img className="ImagenBusqueda" src='/img/busqueda.png' />

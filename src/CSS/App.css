@@ -25,6 +25,7 @@
 
 @media (max-width: 700px) {
     .contenedorRecetasMain {
+        gap: 5vw;
         padding-left: 40px;
         padding-right: 40px;
     }

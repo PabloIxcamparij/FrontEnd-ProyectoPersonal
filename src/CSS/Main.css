@@ -22,21 +22,38 @@
     background-color: white;
     border-radius: 50%;
     position: absolute;
-    top: 5%;
-    right: 5%;
-    width: 4vw;
-    height: 4vw;
+    border: none;
+
+    top: 4%;
+    right: 4%;
+    width: 45px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
-.size-6 {
+.icon-container:hover {
+    background-color: #e99401;
+}
+
+.icon-container:hover .icono {
+    stroke: #ffffff;
+}
+
+.icono {
     width: 100%;
     height: 100%;
 }
 
 
 @media (max-width: 700px) {
-    .contenedorRecetasMain {
-        gap: 5vw;
-       
+    .icon-container {
+        width: 30px;
+        height: 30px;
     }
+
+
+
 }

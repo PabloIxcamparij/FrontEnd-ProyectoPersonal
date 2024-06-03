@@ -5,12 +5,12 @@ function Header() {
 
         <div className='contenedorMenu'>
 
-            <img className="logo" src="../public/img/Logo.png" />
+            <img className="logo" src="/img/Logo.png" />
 
             <form className='contenedorBusqueda'>
                 <input type='text' id='inputBusqueda' className='inputBusqueda' required></input>
                 <button type="submit" id='buttonBusqueda' className='buttonBusqueda'>
-                    <img className="ImagenBusqueda" src='../public/img/busqueda.png' />
+                    <img className="ImagenBusqueda" src='/img/busqueda.png' />
 
                 </button>
             </form>

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import "../CSS/Main.css"
 
 export default function RecetaMain({ receta }) {
 

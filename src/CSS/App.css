@@ -13,55 +13,19 @@
 /* Main */
 
 .contenedorRecetasMain {
-    margin-top: 10px;
+    margin-top: 4%;
+    margin-bottom: 4%;
     gap: 4vw;
     padding: 1vw;
     display: grid;
 
     /* Distribuye automáticamente los elementos en columnas */
-    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
-    /* Alinea los elementos al inicio del contenedor */
-    justify-content: flex-start;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
 }
 
-.ImagenMain {
-    position: relative;
-    display: flex;
-    margin: 0px auto;
-    align-items: center;
-    flex-direction: column;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
-
-    background-color: white;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.img-main {
-    width: 28vw;
-    height: 25vw;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
-}
-
-.icon-container {
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    width: 4vw;
-    height: 4vw;
-}
-
-.size-6 {
-    width: 100%;
-    height: 100%;
-}
-
-
-@media (max-width: 400px) {
+@media (max-width: 700px) {
     .contenedorRecetasMain {
-        gap: 5vw;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }

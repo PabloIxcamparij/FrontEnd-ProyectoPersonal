@@ -7,7 +7,7 @@ import RecetaMain from './component/RecetaMain'
 
 function App() {
 
-  const {data} = useRecetas()
+  const {data, dataCategoria} = useRecetas()
 
 
   return (
@@ -15,7 +15,7 @@ function App() {
       <header>
         <Header/>
         <div className='contenedorTiposRecetasHeader'>
-        {data.map((receta) => (
+        {dataCategoria.map((receta) => (
             <RecetaHeader key={receta.id} receta={receta}/>
           ))}
       
